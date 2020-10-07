@@ -17,3 +17,12 @@ int popcnt_branchless(uint32_t v)
     return v >> 24;
 }
 
+int hammingDistance(int x, int y)
+{
+    return popcnt_branchless(x ^ y) ;
+}
+
+int main()
+{
+    return 0 ;
+}
